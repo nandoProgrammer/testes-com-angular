@@ -1,1 +1,17 @@
-<p>like-widget works!</p>
+<div 
+  class="like-widget-container" 
+  (click)="like()">
+  <span 
+     tabindex="0" 
+     [attr.aria-describedby]="id"
+     role="button" 
+     (keyup.enter)="like()">Like</span>
+  <span 
+     [attr.id]="id" 
+     [attr.aria-label]="likes + 'people liked'" 
+     aria-live="true" 
+     aria-atomic="true"
+     class="like-counter">
+    {{likes}}
+  </span>
+</div>

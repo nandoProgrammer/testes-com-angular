@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LikeWidgetComponent } from './like-widget.component';
+import { UniqueIdService } from '../../services/unique-id/unique-id.service';
 
 
 @NgModule({
@@ -8,6 +9,7 @@ import { LikeWidgetComponent } from './like-widget.component';
   imports: [
     CommonModule
   ],
-  exports: [LikeWidgetComponent]
+  exports: [LikeWidgetComponent],
+  providers: [UniqueIdService]
 })
 export class LikeWidgetModule { }
