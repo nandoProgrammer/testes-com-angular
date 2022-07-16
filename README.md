@@ -1,3 +1,5 @@
+npm install -D karma-firefox-launcher@1.3.0
+
 # TestesComAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
