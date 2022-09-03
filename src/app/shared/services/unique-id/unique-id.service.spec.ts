@@ -28,8 +28,8 @@ describe(UniqueIdService.name, () => {
         expect(ids.size).toBe(50)
     });
 
-    it(`#${UniqueIdService.prototype.generateUniqIdWithPrefix.name}
-    should return the number of generated Ids when called`, () => {
+    it(`#${UniqueIdService.prototype.getNumberOfGenerateUniqueIds.name}
+    should return the number of generatedIds when called`, () => {
         service.generateUniqIdWithPrefix('app')
         service.generateUniqIdWithPrefix('app')
         expect(service.getNumberOfGenerateUniqueIds()).toBe(2)
